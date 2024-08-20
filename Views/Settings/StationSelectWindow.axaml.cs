@@ -40,6 +40,6 @@ public partial class StationSelectWindow : Window
     private async void OpLoaded(object? sender, RoutedEventArgs e)
     {
 
-        await _vm.LoadItems();
+        //await _vm.LoadItems();
     }
 }

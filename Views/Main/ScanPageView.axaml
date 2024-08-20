@@ -2,15 +2,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-			 mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="400"
-		     Width="450" Height="400"
+			 mc:Ignorable="d" d:DesignWidth="670" d:DesignHeight="550"
+		     Width="670" Height="550"
 			 xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
 			 x:Class="Seetek_EMS.Views.ScanPageView"
 			 xmlns:vm="using:Seetek_EMS.ViewModels"
 			 x:DataType="vm:ScanPageViewModel">
 
-	<StackPanel VerticalAlignment="Center" Spacing="20">
-		<Border Margin="40,0,40,0" BorderThickness="" Background="Chocolate" CornerRadius="10">
+	<StackPanel VerticalAlignment="Center" Spacing="30">
+		<Border Margin="90,0,90,0" BorderThickness="" Background="Chocolate" CornerRadius="10">
 
 			<StackPanel Spacing="10" Margin="15">
 				<StackPanel  HorizontalAlignment="Center" Orientation="Horizontal">
@@ -32,7 +32,7 @@
 
 
 
-		<Border BorderThickness="" Background="Gray" Margin="40,0,40,0" CornerRadius="10">
+		<Border Padding="70,0,70,0" HorizontalAlignment="Center" BorderThickness="" Background="Gray" Margin="40,0,40,0" CornerRadius="10">
 
 			<StackPanel Margin="13">
 				<Grid ColumnDefinitions="150,100,Auto" RowDefinitions="Auto,Auto,Auto,Auto"  Margin="">
