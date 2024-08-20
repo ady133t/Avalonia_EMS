@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="250"
+        Width="400" Height="250"
+		x:Class="Seetek_EMS.Views.PassFailWindow"
+        Title="PassFailWindow" WindowStartupLocation="CenterOwner">
+
+	<StackPanel Spacing="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+	<Border Padding="25"  CornerRadius="15" Background="#1e1e1e">
+	<StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid RowDefinitions="25,25,Auto" ColumnDefinitions="80,10,Auto">
+
+			<TextBlock Text="SN" Grid.Row="0" Grid.Column="0" />
+			<TextBlock Text=":" Grid.Row="0" Grid.Column="1" />
+			<TextBlock Text="H99U002727-0200M0057-0001" Grid.Row="0" Grid.Column="2" />
+
+			<TextBlock Text="Result" Grid.Row="1" Grid.Column="0" />
+			<TextBlock Text=":" Grid.Row="1" Grid.Column="1" />
+			<TextBlock Text="Passed" Grid.Row="1" Grid.Column="2" />
+
+			<TextBlock Text="Next Station" Grid.Row="2" Grid.Column="0" />
+			<TextBlock Text=":" Grid.Row="2" Grid.Column="1" />
+			<TextBlock Text="Soldering" Grid.Row="2" Grid.Column="2" />
+			
+		</Grid>
+
+	</StackPanel>
+	</Border>
+		<Button Width="100" Content="OK" />
+	</StackPanel>
+</Window>

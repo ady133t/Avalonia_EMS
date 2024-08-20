@@ -1,0 +1,67 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:vm="using:Seetek_EMS.ViewModels"
+		x:DataType="vm:StationSelectWindowViewModel"
+         mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="250"
+		Width="300" Height="250"
+        x:Class="Seetek_EMS.Views.StationSelectWindow"
+        Title="StationSelectWindow"
+		WindowStartupLocation="CenterOwner">
+
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:StationSelectWindowViewModel/>
+	</Design.DataContext>
+	<StackPanel>
+		<StackPanel Margin="0,40,0,0"  Spacing="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<Grid ColumnDefinitions="70,20,Auto" RowDefinitions="42,42,Auto"  Margin="">
+
+				<TextBlock Text="Resource" Grid.Row="0" Grid.Column="0"/>
+				<TextBlock Text=":" Grid.Row="0" Grid.Column="1"/>
+				<ComboBox Width="150" Margin="0,-5,0,0" SelectedIndex="0" MaxDropDownHeight="100" Grid.Row="0" Grid.Column="2">
+					<ComboBoxItem>1010</ComboBoxItem>
+					<ComboBoxItem>1020</ComboBoxItem>
+					<ComboBoxItem>1030</ComboBoxItem>
+
+				</ComboBox>
+
+				<TextBlock Text="{Binding Station}" Grid.Row="1" Grid.Column="0"/>
+				<TextBlock Text=":" Grid.Row="1" Grid.Column="1"/>
+
+				<ComboBox Width="150" Margin="0,-5,0,0" SelectedIndex="0" MaxDropDownHeight="100" Grid.Row="1" Grid.Column="2">
+					<ComboBoxItem>Preparation</ComboBoxItem>
+					<ComboBoxItem>SMD</ComboBoxItem>
+					<ComboBoxItem>AOI</ComboBoxItem>
+					<ComboBoxItem>MASKING</ComboBoxItem>
+
+				</ComboBox >
+
+
+				<TextBlock Text="Operation" Grid.Row="2" Grid.Column="0"/>
+				<TextBlock Text=":" Grid.Row="2" Grid.Column="1"/>
+				
+				<ComboBox Loaded="OpLoaded" ItemsSource="{Binding Items}" Width="150" Margin="0,-5,0,0" SelectedItem="{Binding SelectedItem}" MaxDropDownHeight="100" Grid.Row="2" Grid.Column="2">
+	
+				
+
+				</ComboBox>
+
+
+
+
+
+			</Grid>
+
+			<StackPanel Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+
+				<Button Background="Green">Save</Button>
+				<Button Background="Gray">Cancel</Button>
+			</StackPanel>
+		</StackPanel>
+
+	</StackPanel>
+
+</Window>

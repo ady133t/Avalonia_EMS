@@ -1,0 +1,109 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Seetek_EMS.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="500"
+		Width="650" Height="500"
+        x:Class="Seetek_EMS.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Seetek_EMS"
+		CanResize="False"
+		SizeToContent="Manual" WindowStartupLocation="CenterScreen"
+		ExtendClientAreaToDecorationsHint="True"
+		ExtendClientAreaTitleBarHeightHint="-1"
+		ExtendClientAreaChromeHints="NoChrome">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Border Background="Transparent"
+		  BorderThickness="2"
+		   CornerRadius="10"
+		   BoxShadow="0 4 8 #40000000, 0 2 4 #20000000"
+		   Margin="0">
+		<StackPanel>
+			<Grid ColumnDefinitions="*, Auto, Auto, Auto"
+			 RowDefinitions="Auto"
+			 Background="Transparent"
+			 Grid.Row="0"
+			 PointerPressed="TitleBarPointerPressed"
+			 PointerMoved="TitleBarPointerMoved"
+			 PointerReleased="TitleBarPointerReleased">
+				<TextBlock VerticalAlignment="Center" Margin="10,0"
+						   Foreground=""
+						   Text="SEETEK EMS"/>
+				<Button FontSize="10" Background="#00CA4F" IsEnabled="False" Grid.Column="1" Content="⤢" Margin="0,0,5,0"
+						 Click="MaximizeBtn" />
+				<Button FontSize="10" Background="#FFBD44" Grid.Column="2" Content="_"  Margin="0,0,5,0"
+						Click="MinimizedBtn"/>
+				<Button FontSize="10" Background="#FF5C5C" Grid.Column="3" Margin="0,0,5,0"  Content="X" Click="CloseBtn"/>
+			</Grid>
+
+
+			<DockPanel Margin="0,0,0,-22">
+				<Menu DockPanel.Dock="Top">
+					<MenuItem Header="_File">
+						<MenuItem Header="Logout"/>
+						<Separator/>
+						<MenuItem Header="_Exit" Command="{Binding ExitCommand}"/>
+					</MenuItem>
+					<MenuItem Header="_Setting">
+						<MenuItem Header="Select Station" Command="{Binding OpenStationCommand}"/>
+
+					</MenuItem>
+				</Menu>
+				<TextBlock/>
+			</DockPanel>
+			<Separator/>
+
+
+			<SplitView IsPaneOpen="{Binding IsPaneOpen}"
+					   OpenPaneLength="140"
+					   DisplayMode="CompactInline"
+					   CompactPaneLength="48"
+					   Background=""
+					   PaneBackground="#1e1e1e">
+				<SplitView.Pane>
+					<StackPanel Spacing="5"
+						Margin="5">
+						<Button Width="" Command="{Binding OpenPaneCommand}">
+							<PathIcon Data="{StaticResource line_horizontal_3_regular}"></PathIcon>
+						</Button>
+						<ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItemList}" >
+							<ListBox.ItemTemplate>
+								<DataTemplate DataType="{x:Type vm:ListItemTemplate}">
+
+									<StackPanel Margin="{Binding $parent.((vm:MainWindowViewModel)DataContext).Margin}" Spacing="15" Orientation="Horizontal">
+										<PathIcon Margin="0,5,0,5"  Data="{Binding ListItemIcon}"></PathIcon>
+										<TextBlock Margin="0,5,0,5" Text="{Binding Label}"></TextBlock>
+									</StackPanel>
+
+								</DataTemplate>
+							</ListBox.ItemTemplate>
+						</ListBox>
+					</StackPanel>
+				</SplitView.Pane>
+				<SplitView.Content>
+					<Border CornerRadius="12 12 0 0"
+							Background="#2d2d2d">
+						<TransitioningContentControl Content="{Binding CurrentPage}" />
+
+
+					</Border>
+
+				</SplitView.Content>
+
+			</SplitView>
+
+		</StackPanel>
+
+		<!-- main content here -->
+
+
+	</Border>
+</Window>

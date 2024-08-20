@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Source Code\\Seetek EMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|D:\\Source Code\\Seetek EMS\\views\\main\\scanpageview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|solutionrelative:views\\main\\scanpageview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|d:\\source code\\seetek ems\\views\\passfailwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|solutionrelative:views\\passfailwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|D:\\Source Code\\Seetek EMS\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|D:\\Source Code\\Seetek EMS\\views\\passfailwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|solutionrelative:views\\passfailwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|D:\\Source Code\\Seetek EMS\\views\\main\\scanpageview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|solutionrelative:views\\main\\scanpageview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|D:\\Source Code\\Seetek EMS\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647760AC-56D7-40EA-A227-AED88ACF152E}|Seetek EMS.csproj|solutionrelative:models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Source Code\\Seetek EMS\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
+              "ToolTip": "D:\\Source Code\\Seetek EMS\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowCkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T02:34:49.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScanPageView.axaml.cs",
+              "DocumentMoniker": "D:\\Source Code\\Seetek EMS\\Views\\Main\\ScanPageView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\Main\\ScanPageView.axaml.cs",
+              "ToolTip": "D:\\Source Code\\Seetek EMS\\Views\\Main\\ScanPageView.axaml.cs",
+              "RelativeToolTip": "Views\\Main\\ScanPageView.axaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T02:34:37.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PassFailWindow.axaml",
+              "DocumentMoniker": "D:\\Source Code\\Seetek EMS\\Views\\PassFailWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\PassFailWindow.axaml",
+              "ToolTip": "D:\\Source Code\\Seetek EMS\\Views\\PassFailWindow.axaml",
+              "RelativeToolTip": "Views\\PassFailWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T02:13:56.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PassFailWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Source Code\\Seetek EMS\\Views\\PassFailWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\PassFailWindow.axaml.cs",
+              "ToolTip": "D:\\Source Code\\Seetek EMS\\Views\\PassFailWindow.axaml.cs",
+              "RelativeToolTip": "Views\\PassFailWindow.axaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T02:13:56.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScanPageView.axaml",
+              "DocumentMoniker": "D:\\Source Code\\Seetek EMS\\Views\\Main\\ScanPageView.axaml",
+              "RelativeDocumentMoniker": "Views\\Main\\ScanPageView.axaml",
+              "ToolTip": "D:\\Source Code\\Seetek EMS\\Views\\Main\\ScanPageView.axaml",
+              "RelativeToolTip": "Views\\Main\\ScanPageView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T07:33:07.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Resource.cs",
+              "DocumentMoniker": "D:\\Source Code\\Seetek EMS\\Models\\Resource.cs",
+              "RelativeDocumentMoniker": "Models\\Resource.cs",
+              "ToolTip": "D:\\Source Code\\Seetek EMS\\Models\\Resource.cs",
+              "RelativeToolTip": "Models\\Resource.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T07:27:45.365Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

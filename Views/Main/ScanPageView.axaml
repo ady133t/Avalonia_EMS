@@ -1,0 +1,69 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="400"
+		     Width="450" Height="400"
+			 xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
+			 x:Class="Seetek_EMS.Views.ScanPageView"
+			 xmlns:vm="using:Seetek_EMS.ViewModels"
+			 x:DataType="vm:ScanPageViewModel">
+
+	<StackPanel VerticalAlignment="Center" Spacing="20">
+		<Border Margin="40,0,40,0" BorderThickness="" Background="Chocolate" CornerRadius="10">
+
+			<StackPanel Spacing="10" Margin="15">
+				<StackPanel  HorizontalAlignment="Center" Orientation="Horizontal">
+
+					<TextBlock Text="Current Operation : " />
+					<TextBlock Text="{Binding Operation}" />
+
+				</StackPanel>
+				<StackPanel Spacing="10" HorizontalAlignment="Center" Orientation="Horizontal">
+
+					<TextBlock Text="SN : " />
+					<TextBox Name="SNText"  Width="200"></TextBox>
+					<Button Click="" >SCAN</Button>
+				</StackPanel>
+
+			</StackPanel>
+		</Border>
+
+
+
+
+		<Border BorderThickness="" Background="Gray" Margin="40,0,40,0" CornerRadius="10">
+
+			<StackPanel Margin="13">
+				<Grid ColumnDefinitions="150,100,Auto" RowDefinitions="Auto,Auto,Auto,Auto"  Margin="">
+					<TextBlock Text="PO" Grid.Row="0" Grid.Column="0" />
+					<TextBlock Text=":" Grid.Row="0" Grid.Column="1" />
+					<TextBlock Text="1234567890" Grid.Row="0" Grid.Column="2" />
+
+					<TextBlock Text="PARTNO" Grid.Row="1" Grid.Column="0" />
+					<TextBlock Text=":" Grid.Row="1" Grid.Column="1" />
+					<TextBlock Text="1234567890" Grid.Row="1" Grid.Column="2" />
+
+					<TextBlock Text="PREV STATION" Grid.Row="2" Grid.Column="0" />
+					<TextBlock Text=":" Grid.Row="2" Grid.Column="1" />
+					<TextBlock Text="SMD" Grid.Row="2" Grid.Column="2" />
+
+					<TextBlock Text="PREV RESULT" Grid.Row="3" Grid.Column="0" />
+					<TextBlock Text=":" Grid.Row="3" Grid.Column="1" />
+					<TextBlock Text="PASSED" Grid.Row="3" Grid.Column="2" />
+
+
+				</Grid>
+
+
+			</StackPanel>
+
+		</Border>
+
+		<StackPanel Spacing="50" HorizontalAlignment="Center" Orientation="Horizontal">
+			<Button Click="PassBtn" Background="Green" Width="80">PASS</Button>
+			<Button Background="Red" Width="80">FAIL</Button>
+		</StackPanel>
+
+	</StackPanel>
+</UserControl>

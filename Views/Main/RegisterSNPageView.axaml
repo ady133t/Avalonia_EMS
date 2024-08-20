@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="400"
+		     Width="450" Height="400"               x:Class="Seetek_EMS.Views.RegisterSNPageView"
+			 xmlns:vm="using:Seetek_EMS.ViewModels"
+			 x:DataType="vm:RegisterSNPageViewModel"
+			 >
+
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Border Height="200" Width="350" CornerRadius="10" Background="#1e1e1e">
+	<StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid ColumnDefinitions="55,30,160" RowDefinitions="Auto,Auto,Auto">
+			<TextBlock Margin="0,5" Text="SN" Grid.Row="0" Grid.Column="0"/>
+			<TextBlock Margin="0,5" Text=":" Grid.Row="0" Grid.Column="1"/>
+			<TextBox Width="150" Grid.Row="0" Grid.Column="2"/>
+
+			<TextBlock Margin="0,7" Text="PO" Grid.Row="1" Grid.Column="0"/>
+			<TextBlock Margin="0,7" Text=":" Grid.Row="1" Grid.Column="1"/>
+			<TextBox Margin="0,5,0,5" Width="150" Grid.Row="1" Grid.Column="2"/>
+
+
+			<TextBlock Margin="0,5" Text="PartNo" Grid.Row="2" Grid.Column="0"/>
+			<TextBlock Margin="0,5" Text=":" Grid.Row="2" Grid.Column="1"/>
+			<TextBox Width="150" Grid.Row="2" Grid.Column="2"/>
+		</Grid>
+
+	
+		</StackPanel>
+		</Border>
+		<StackPanel Margin="0,25" HorizontalAlignment="Center" Spacing="29" Orientation="Horizontal">
+
+			<Button Background="MediumSeaGreen">Register</Button>
+			<Button Width="75">Clear</Button>
+
+		</StackPanel>
+	</StackPanel>
+	
+			 </UserControl>
